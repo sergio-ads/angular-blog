@@ -3,18 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainTitleComponent } from './pages/home/components/main-title/main-title.component';
-import { MainMiniCardComponent } from './pages/home/components/main-mini-card/main-mini-card.component';
+import { MainSectionComponent } from './pages/home/components/main-section/main-section.component';
 import { MainFooterComponent } from './core/components/main-footer/main-footer.component';
 import { MainHeaderComponent } from './core/components/main-header/main-header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MainCarouselComponent } from './pages/home/components/main-carousel/main-carousel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainTitleComponent,
-    MainMiniCardComponent,
+    MainSectionComponent,
     MainFooterComponent,
     MainHeaderComponent,
     HomeComponent,
@@ -22,7 +21,8 @@ import { MainCarouselComponent } from './pages/home/components/main-carousel/mai
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+::ng-deep .carousel-indicators [data-bs-target] {
+  background-color: $primary-bg-subtle !important;
+}
+::ng-deep .carousel-indicators > button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+}
+::ng-deep .carousel-item {
+  @extend .d-flex;
+  @extend .justify-content-center;
+}
+::ng-deep a img {
+  @extend .img-fluid;
+}
