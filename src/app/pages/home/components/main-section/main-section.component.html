@@ -3,7 +3,7 @@
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 g-4">
         <div class="col" *ngFor="let item of items">
             <div class="card shadow-sm" style="height: 32rem;">
-                <img [src]="'/assets/'+item.imagemCapa" height="230px" class="rounded" alt="..."/>
+                <img [src]="'./assets/'+item.imagemCapa" height="230px" class="rounded" alt="..."/>
                 <div class="card-body">
                     <h3 class="pt-3">{{item.titulo}}</h3>
                     <p class="card-text pt-3 pb-3">{{item.descricao}}</p>

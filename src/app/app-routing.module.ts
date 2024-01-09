@@ -9,6 +9,7 @@ const routes: Routes = [
   { path:"post/:id", component: PostComponent },
   
   //Page Not Found
+  { path:"404", component: PagenotfoundComponent },
   { path:"**", pathMatch: 'full', component: PagenotfoundComponent },
 ];
 

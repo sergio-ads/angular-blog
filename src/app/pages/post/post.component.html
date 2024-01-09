@@ -1,11 +1,13 @@
+<!-- @if (post) { -->
 <br>
 <h2 class="text-center">{{post.titulo}}</h2>
 <br>
 
 <figure class="figure w-50 float-end m-3">
-    <img [src]="'/assets/'+post.imagemCapa" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+    <img [src]="'./assets/'+post.imagemCapa" class="figure-img img-fluid rounded img-thumbnail" alt="...">
     <figcaption class="figure-caption text-center">{{post.descricao}}</figcaption>
 </figure>
 <p><span *ngFor="let i of ___count">{{post.descricao}} </span></p>
 
 <a [routerLink]="['']" class="btn btn-lg btn-outline-primary mb-3"><< Voltar para página inicial</a>
+<!-- } -->

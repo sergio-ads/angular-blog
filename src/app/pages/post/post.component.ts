@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { fakeCards } from "../../data/fakeCards";
 
 @Component({
@@ -7,21 +7,23 @@ import { fakeCards } from "../../data/fakeCards";
   templateUrl: './post.component.html',
   styleUrl: './post.component.scss'
 })
-export class PostComponent implements OnInit {
+export class PostComponent {
   post: any;
   ___count = [];
 
-  constructor(private route:ActivatedRoute) {
+  constructor(private route:ActivatedRoute, private router:Router) {
     this.___count.length = 20;
-  }
-
-  ngOnInit(): void {
-    this.route.paramMap.subscribe(value => this.post = this.setValuesToComponent(value.get("id")))
+    route.paramMap.subscribe(value => this.setValuesToComponent(value.get("id")))
   }
 
   setValuesToComponent(id:string | null) {
-    const result = fakeCards.filter(post => post.id == id)[0]
-    return result
+    const result = fakeCards.filter(post => post.id == id)
+    
+    if(result.length == 0) {
+      this.router.navigate(['404'], {skipLocationChange:true})
+    } else {
+      this.post = result[0];
+    }
   }
 
 }

@@ -2,7 +2,7 @@
     @for (item of items; track item) {
         <ng-template ngbSlide>
             <a [routerLink]="['post', item.id]">
-                <img [src]="'/assets/'+item.imagemCapa" alt="..."/>
+                <img [src]="'./assets/'+item.imagemCapa" alt="..."/>
             </a>
             <div class="carousel-caption">
                 <h3 class="text-body">{{item.titulo}}</h3>
