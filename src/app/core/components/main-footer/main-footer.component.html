@@ -1,10 +1,12 @@
-<!-- <div class="container"> -->
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-    </ul>
-    <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-<!-- </div> -->
+<footer class="footer p-3 text-body-secondary bg-body-tertiary">
+    <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a [routerLink]="['']" class="nav-link px-2 text-body-secondary">Início</a></li>
+            <li class="nav-item"><a [routerLink]="['faq']" class="nav-link px-2 text-body-secondary">FAQ</a></li>
+            <li class="nav-item"><a [routerLink]="['termos']" class="nav-link px-2 text-body-secondary">Termos</a></li>
+            <li class="nav-item"><a [routerLink]="['sobre']" class="nav-link px-2 text-body-secondary">Sobre</a></li>
+            <li class="nav-item"><a [routerLink]="['contato']" class="nav-link px-2 text-body-secondary">Contato</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+    </div>
+</footer>

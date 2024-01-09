@@ -4,8 +4,8 @@
   background-color: $primary-bg-subtle !important;
 }
 ::ng-deep .carousel-indicators > button {
-  width: 10px !important;
-  height: 10px !important;
+  width: 15px !important;
+  height: 15px !important;
   border-radius: 100% !important;
 }
 ::ng-deep .carousel-item {
@@ -14,4 +14,5 @@
 }
 ::ng-deep a img {
   @extend .img-fluid;
+  @extend .rounded;
 }

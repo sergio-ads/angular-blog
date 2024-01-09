@@ -1,7 +1,7 @@
 <ngb-carousel class="carousel-fade">
     @for (item of items; track item) {
         <ng-template ngbSlide>
-            <a [href]="'/post/'+item.id">
+            <a [routerLink]="['post', item.id]">
                 <img [src]="'/assets/'+item.imagemCapa" alt="..."/>
             </a>
             <div class="carousel-caption">

@@ -9,6 +9,8 @@ import { MainHeaderComponent } from './core/components/main-header/main-header.c
 import { HomeComponent } from './pages/home/home.component';
 import { MainCarouselComponent } from './pages/home/components/main-carousel/main-carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PostComponent } from './pages/post/post.component';
+import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MainSectionComponent,
     MainFooterComponent,
     MainHeaderComponent,
+    MainCarouselComponent,
     HomeComponent,
-    MainCarouselComponent
+    PostComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

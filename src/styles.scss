@@ -8,3 +8,6 @@ body, app-root {
     @extend .flex-column;
     @extend .h-100;
 }
+app-main-footer {
+    @extend .mt-auto;
+}
